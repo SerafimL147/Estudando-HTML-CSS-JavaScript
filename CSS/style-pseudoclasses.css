@@ -1,0 +1,56 @@
+/* PSEUDO CLASSES
+HOVER
+NOT
+FOCUS
+LAST-CHILD
+FIRST-CHILD
+NTH-CHILD */
+
+h1{
+    background-color:chocolate;
+    text-align: center;
+}
+
+button{
+    background-color: purple;
+    color: antiquewhite;
+    border: 0;
+    border-radius: 24px;
+    padding: 10px;
+    
+}
+             /*NOT DISABLED = Desabilita as propriedades do botão, tornando ele sem função */
+button:hover:not(:disabled), /* Cursor do Mause em cimas do elemento */
+button:focus /* Elemento selecionado pelo TAB = Navegar pelo teclado*/
+{
+    background-color: blueviolet;
+    cursor: pointer;
+
+    /* DEIXANDO O BOTÃO ELEGANTE RS */
+
+    outline: 2px solid blueviolet; /* BORDA NO BOTAO*/
+    outline-offset: 1px; /* DETERMINA O ESPAÇAMENTO ENTRE A BORDA E O BOTÃO, DEIXANDO ELE EM UMA TRANSIÇÃO LEGAL*/
+
+}
+
+button:disabled{  /* Desabilita o elemento */
+    background-color:darkgray;
+}
+
+button:last-child{  /* SE BASEIA NO ULTIMO FILHO  */
+    margin-left: 100px;  
+}
+
+li:first-child{ /* SE BASEIA NO PRIMEIRO FILHO */
+    background-color: aqua;
+}
+
+li:last-child{
+    background-color: brown;
+}
+
+p:nth-child(2),   /* POSSO ESCOLHER O ELEMENTO DE ACORDO COM A POSIÇÃO  */
+li:nth-child(2)
+{
+    background-color: chartreuse;
+}
