@@ -1,0 +1,47 @@
+
+p::first-line{
+  color: cornflowerblue;
+}
+
+p::first-letter{  /* Seleciona a primeira letra */
+  color: blueviolet;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+li::marker{  /* Modifica o conteúdo da lista */
+  content: "❤";   /* A PROPRIEDADE CONTENT MODIFICA O CONTEÚDO DA LISTA */
+  color: brown;
+}
+
+li:last-child::marker{  /*  */
+  content: "🎉";
+}
+
+h1::before{ /* ANTES DO ELEMENTO */
+  content: "[SERAFIM]";
+  font-size: 16px;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+h1::after{  /* DEPOIS DO ELEMENTO */
+
+  /* CRIANDO UMA BOLINHA */
+
+  content: '🚀';
+  width: 24px;
+  height: 24px;
+  background-color: blueviolet;
+  border-radius: 50%;
+  display: flex;
+  font-size: 16px;
+
+  align-items: center;
+  justify-content: center;
+}
