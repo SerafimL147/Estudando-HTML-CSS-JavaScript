@@ -1,8 +1,51 @@
-h2 {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
 
-    color:black;
-}
+  header, ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-p {
-    color:brown;
-}
+  header {
+    background-color: black;
+    padding: 8px 20px;
+    text-wrap: nowrap;
+    gap: 40px;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: fixed;
+    
+  }
+
+  header h1{
+    color: antiquewhite;
+  }
+
+  header ul {
+    background-color: aqua;
+    list-style: none;
+    gap: 25px
+  }
+
+  header li a {
+    color: antiquewhite;
+   
+  }
+  
+  section {
+    padding: 8px 24px;
+  }
+
+  p {
+    padding: 10px 0;
+  }
+
+  

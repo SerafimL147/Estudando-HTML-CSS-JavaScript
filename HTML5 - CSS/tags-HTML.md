@@ -138,3 +138,10 @@ Exemplo:
 <div>
   <p>Um conteúdo qualquer.....</p>
 </div>
+
+ CSS
+position: static; /* default */
+position: relative
+position: absolute
+position: fixed
+position: sticky
