@@ -4,10 +4,30 @@
     box-sizing: border-box;
 }
 
+
+
+
 body{
     font-family:sans-serif;
     padding-top: 150px;
+    background: rgb(85, 60, 60);
 }
+
+header{
+    background-color: black;
+    display: flex;
+    padding: 24px 24px;
+    position: fixed;
+    position: relative;
+    bottom: 150px;
+    width: 100%;
+    color: aliceblue;
+   
+
+}
+
+
+
 
 h1{
     text-align: center;
@@ -74,4 +94,8 @@ input, button{
 textarea{
     resize:none;
     min-height: 100px;
+}
+
+footer{
+    padding: 100px 0;
 }
